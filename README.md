@@ -10,7 +10,9 @@ Connection from 192.168.101.155:49229
 ver
 
 Microsoft Windows [?汾 6.1.7601]
+
 set
+
 ALLUSERSPROFILE=C:\ProgramData
 APPDATA=C:\Users\x\AppData\Roaming
 CommonProgramFiles=C:\Program Files (x86)\Common Files
